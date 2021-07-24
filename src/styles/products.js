@@ -12,6 +12,7 @@ export const Container = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
   padding: 50px;
 
   @media (min-width: 1300px) {
@@ -32,12 +33,19 @@ export const Container = styled(motion.div)`
 
 export const CardContainer = styled(motion.div)`
   position: relative;
-  margin: 40px 0;
+  margin-top: 40px;
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+`;
+
+export const H2 = styled(motion.div)`
+  font-size: 2em;
+  color: #ffffff;
+  font-family: Zilla Slab;
+  margin: 5px auto 25px;
 `;
 
 export const Card = styled(motion.div)`

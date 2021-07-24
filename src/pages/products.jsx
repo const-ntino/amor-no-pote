@@ -2,10 +2,7 @@ import * as S from "../styles/index";
 import * as P from "../styles/products";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -39,7 +36,7 @@ const Products = () => {
       initial="initial"
       animate="animate"
       exit={{ opacity: 0 }}
-      variants={stagger}
+      enter={{ opacity: 0 }}
     >
       <P.Container animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
         <S.Header variants={fadeInUp}>
@@ -57,6 +54,7 @@ const Products = () => {
             </li>
           </ul>
         </S.Header>
+        <P.H2 variants={fadeInUp}>Escolha seu potinho</P.H2>
         <P.CardContainer
           initial="initial"
           animate="animate"
@@ -121,7 +119,7 @@ const Products = () => {
         <S.SocialContainer variants={stagger}>
           <li>
             <S.Social variants={fadeInUp}>
-              <FontAwesomeIcon icon={faFacebookSquare} />
+              <FontAwesomeIcon icon={faWhatsapp} />
             </S.Social>
           </li>
           <li>

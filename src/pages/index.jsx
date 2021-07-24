@@ -1,10 +1,7 @@
 import * as S from "../styles/index";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -71,14 +68,15 @@ const Index = () => {
             alt="Moça ruiva segurando um quadro transparente com um coração"
           />
         </S.ImgBox>
+
         <S.SocialContainer variants={stagger}>
           <li>
             <S.Social variants={fadeInUp}>
-              <FontAwesomeIcon icon={faFacebookSquare} />
+              <FontAwesomeIcon icon={faWhatsapp} />
             </S.Social>
           </li>
           <li>
-            <S.Social variants={fadeInUp}>
+            <S.Social variants={fadeInUp} transition={{ delay: 0.2 }}>
               <FontAwesomeIcon icon={faInstagram} />
             </S.Social>
           </li>

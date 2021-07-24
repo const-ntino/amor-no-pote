@@ -136,7 +136,7 @@ export const Header = styled(motion.div)`
 export const Intro = styled(motion.div)`
   transform: translateX(-100px) !important;
   max-width: 700px;
-  padding: 40px;
+  padding: 40px 90px;
   padding-left: 110px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -150,12 +150,15 @@ export const Intro = styled(motion.div)`
     color: #ffffff;
     font-family: Zilla Slab;
     margin-bottom: 20px;
+    max-width: 22ch;
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.14em;
     color: #e5e5e5;
     line-height: 1.6;
+    letter-spacing: 0.8px;
+    max-width: 32ch;
   }
 
   a {
@@ -285,6 +288,8 @@ export const Social = styled(motion.div)`
   backdrop-filter: blur(2px);
   transition: 0.7s;
   overflow: hidden;
+
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-20px) !important;
