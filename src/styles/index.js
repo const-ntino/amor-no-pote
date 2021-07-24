@@ -6,11 +6,8 @@ export const Section = styled(motion.div)`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("bg.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+
+  background: linear-gradient(to bottom, #cb356b, #bd3f32);
   padding: 50px;
 
   @media (max-width: 992px) {
@@ -188,13 +185,13 @@ export const Intro = styled(motion.div)`
     }
 
     p {
-      font-size: 1em;
+      font-size: 0.92em;
       margin: 0 auto;
     }
   }
 
   @media (max-width: 992px) {
-    transform: translateX(0px);
+    transform: translateX(0px) !important;
     width: 100%;
     padding: 30px;
     margin-top: -40px;

@@ -117,7 +117,7 @@ const Products = () => {
             </P.Content>
           </P.Card>
         </P.CardContainer>
-        
+
         <S.SocialContainer variants={stagger}>
           <li>
             <S.Social variants={fadeInUp}>
