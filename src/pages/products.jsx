@@ -32,12 +32,7 @@ const stagger = {
 
 const Products = () => {
   return (
-    <S.Section
-      initial="initial"
-      animate="animate"
-      exit={{ opacity: 0 }}
-      enter={{ opacity: 0 }}
-    >
+    <S.Section initial="initial" animate="animate" exit={{ opacity: 0 }}>
       <P.Container animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
         <S.Header variants={fadeInUp}>
           <a href="/" className="logo">
@@ -54,7 +49,9 @@ const Products = () => {
             </li>
           </ul>
         </S.Header>
+
         <P.H2 variants={fadeInUp}>Escolha seu potinho</P.H2>
+
         <P.CardContainer
           initial="initial"
           animate="animate"

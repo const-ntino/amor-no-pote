@@ -7,8 +7,23 @@ export const Section = styled(motion.div)`
   align-items: center;
   min-height: 100vh;
 
-  background: linear-gradient(to bottom, #cb356b, #bd3f32);
   padding: 50px;
+
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #cb356b, #bd3f32);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   @media (max-width: 992px) {
     padding: 50px 10px 10px;
