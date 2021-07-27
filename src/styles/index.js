@@ -9,9 +9,9 @@ export const Section = styled(motion.div)`
 
   padding: 50px;
 
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #cb356b, #bd3f32);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #cb356b, #bd3f32);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 7s ease infinite;
 
   @keyframes gradient {
     0% {
