@@ -11,7 +11,7 @@ export const Section = styled(motion.div)`
 
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #cb356b, #bd3f32);
   background-size: 400% 400%;
-  animation: gradient 7s ease infinite;
+  animation: gradient 9s ease infinite;
 
   @keyframes gradient {
     0% {

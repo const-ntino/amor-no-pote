@@ -63,7 +63,7 @@ export const Card = styled(motion.div)`
   justify-content: center;
 
   :hover {
-    cursor: pointer;
+    cursor: default;
   }
 
   :hover .card-content {
@@ -71,6 +71,11 @@ export const Card = styled(motion.div)`
   }
 
   :hover .content-box h3 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  :hover .content-box .button {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -100,8 +105,35 @@ export const Content = styled.div`
   transition: bottom 0.5s;
 `;
 
+export const Button = styled.button`
+  grid-area: button;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+
+  transition: 0.5s;
+  transition-delay: 0.4s;
+  opacity: 0;
+  transform: translateY(-20px);
+`;
+
 export const ContentBox = styled.div`
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "title button"
+    "text text";
+  align-items: center;
+
   h3 {
+    grid-area: title;
+
     color: #ffffff;
     font-family: Zilla Slab;
     text-transform: uppercase;
@@ -117,7 +149,14 @@ export const ContentBox = styled.div`
     transform: translateY(-20px);
   }
 
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
   span {
+    grid-area: text;
+
     font-size: 14px;
     font-weight: 300;
     font-family: Overpass;

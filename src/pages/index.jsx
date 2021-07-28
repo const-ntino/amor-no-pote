@@ -37,7 +37,11 @@ const Index = () => {
       exit={{ opacity: 0 }}
       variants={stagger}
     >
-      <S.Container animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
+      <S.Container
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        variants={stagger}
+      >
         <S.Header variants={fadeInUp}>
           <a href="/" className="logo">
             <img src="/logo.svg" alt="logo escrito Amor no pote" />
@@ -60,7 +64,7 @@ const Index = () => {
             Sejam mensagens de amor ou mensagens motivacionais, nós te ajudamos
             a guardar suas emoções em lindos potes de vidro!
           </p>
-          <a href="/products">Saiba mais</a>
+          <a href="/products">Escolha o seu</a>
         </S.Intro>
         <S.ImgBox variants={fadeInUp}>
           <img

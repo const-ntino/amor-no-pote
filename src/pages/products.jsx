@@ -3,6 +3,7 @@ import * as P from "../styles/products";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -68,6 +69,11 @@ const Products = () => {
             <P.Content className="card-content">
               <P.ContentBox className="content-box">
                 <h3>Potinho Sorriso</h3>
+                <P.Button className="button">
+                  <a href="/">
+                    <FontAwesomeIcon icon={faArrowCircleRight} size="xs" />
+                  </a>
+                </P.Button>
                 <span>
                   Contém 90 mensagens, sendo 30 frases, 30 músicas e 30 motivos
                   do "Porque te amo".
@@ -86,6 +92,11 @@ const Products = () => {
             <P.Content className="card-content">
               <P.ContentBox className="content-box">
                 <h3>Potinho Sortidos</h3>
+                <P.Button className="button">
+                  <a href="/">
+                    <FontAwesomeIcon icon={faArrowCircleRight} size="xs" />
+                  </a>
+                </P.Button>
                 <span>
                   Contém 250 mensagens de motivação, versículos e empoderamento
                   feminino.
@@ -104,6 +115,11 @@ const Products = () => {
             <P.Content className="card-content">
               <P.ContentBox className="content-box">
                 <h3>Potinho Reflexões</h3>
+                <P.Button className="button">
+                  <a href="/">
+                    <FontAwesomeIcon icon={faArrowCircleRight} size="xs" />
+                  </a>
+                </P.Button>
                 <span>
                   Contém 365 mensagens de reflexões diárias para um ano inteiro
                   de motivação.
